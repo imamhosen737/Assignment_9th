@@ -52,23 +52,28 @@
 	<div class="container-fluid mt-2">
 		<div class="row">
 
-		<?php
-		$conn = new mysqli('localhost', 'root', '', 'ost_9th_assignment');
-		$id = $_GET['id'];
-		$details = $conn->query("SELECT * FROM `post` WHERE `id`= $id");
-		
-		while ($data = $details->fetch_assoc()) { ?>
-		
-			<div class="col-md-12 col-sm-12">
-				<div class="card mb-3">
-					<img src="./assets//uploads/<?php echo $data['photo']; ?>" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title"><?php echo $data['title']; ?></h5>
-						<p class="card-text"><?php echo $data['details']; ?></p>
-						<p class="card-text"><small class="text-muted">Last updated <?php echo $data['date']; ?></small></p>
+			<?php
+			$conn = new mysqli('localhost', 'root', '', 'ost_9th_assignment');
+			$id = $_GET['id'];
+			$details = $conn->query("SELECT * FROM `post` WHERE `id`= $id");
+
+			while ($data = $details->fetch_assoc()) { ?>
+
+				<div class="col-md-12 col-sm-12">
+					<div class="card mb-3">
+						<img src="./assets//uploads/<?php echo $data['photo']; ?>" class="card-img-top" alt="..." height="500" width="300">
+						<div class="card-body">
+							<h5 class="card-title"><?php echo $data['title']; ?></h5>
+							<p class="card-text"><?php echo $data['details']; ?></p>
+							<p class="card-text"><small class="text-muted">Last updated <?php echo $data['date']; ?></small></p>
+						</div>
+					</div>
+					<div class="mb-3 mt-3">
+						<a href="" class="btn btn-sm btn-primary">Share on Facebook</a>
+						<a href="" class="btn btn-sm btn-success">Share on Instagram</a>
+						<a href="" class="btn btn-sm btn-info">Share on Twitter</a>
 					</div>
 				</div>
-			</div>
 
 			<?php } ?>
 

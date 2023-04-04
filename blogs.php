@@ -51,14 +51,13 @@
 	<!-- Navbar -->
 
 	<div class="container-fluid mt-2">
-		<h2>Blog Posts</h2>
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
 				<div class="card mb-3">
 					<img src="./assets/bangladesh-cricket-team-huddled-in-field-30p5bs75d45wnjb5.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">Bangladesh national cricket team</h5>
-						<p class="card-text">The Bangladesh men's national cricket team, popularly known as The Tigers, is administered by the Bangladesh Cricket Board. It is a Full Member of the International Cricket Council with Test, One-Day International and T20 International status.</p>
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
 						<a href="" class="btn btn-info btn-sm">Read More..</a>
@@ -67,10 +66,10 @@
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="card mb-3">
-					<img src="./assets/./221129095912-02-portugal-ronaldo-goal-fernandes-112822.jpg" class="card-img-top" alt="...">
+					<img src="./assets/bangladesh-cricket-team-huddled-in-field-30p5bs75d45wnjb5.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">Cristiano Ronaldo</h5>
-						<p class="card-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese professional footballer who plays as a forward for and captains both Saudi Professional League club Al Nassr and the Portugal national team. Wikipedia</p>
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
 						<a href="" class="btn btn-info btn-sm">Read More..</a>
