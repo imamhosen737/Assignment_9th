@@ -29,7 +29,6 @@
 				</a>
 			</div>
 
-
 			<!-- Right elements -->
 			<div class="d-flex align-items-center">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -52,16 +51,26 @@
 
 	<div class="container-fluid mt-2">
 		<div class="row">
+
+		<?php
+		$conn = new mysqli('localhost', 'root', '', 'ost_9th_assignment');
+		$id = $_GET['id'];
+		$details = $conn->query("SELECT * FROM `post` WHERE `id`= $id");
+		
+		while ($data = $details->fetch_assoc()) { ?>
+		
 			<div class="col-md-12 col-sm-12">
 				<div class="card mb-3">
-					<img src="./assets/bangladesh-cricket-team-huddled-in-field-30p5bs75d45wnjb5.jpg" class="card-img-top" alt="...">
+					<img src="./assets//uploads/<?php echo $data['photo']; ?>" class="card-img-top" alt="...">
 					<div class="card-body">
-						<h5 class="card-title">Bangladesh national cricket team</h5>
-						<p class="card-text">The Bangladesh men's national cricket team, popularly known as The Tigers, is administered by the Bangladesh Cricket Board. It is a Full Member of the International Cricket Council with Test, One-Day International and T20 International status.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						<h5 class="card-title"><?php echo $data['title']; ?></h5>
+						<p class="card-text"><?php echo $data['details']; ?></p>
+						<p class="card-text"><small class="text-muted">Last updated <?php echo $data['date']; ?></small></p>
 					</div>
 				</div>
 			</div>
+
+			<?php } ?>
 
 		</div>
 

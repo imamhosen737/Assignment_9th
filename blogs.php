@@ -51,6 +51,7 @@
 	<!-- Navbar -->
 
 	<div class="container-fluid mt-2">
+		<h2>Blog Posts</h2>
 		<div class="row">
 			<div class="col-md-3 col-sm-6">
 				<div class="card mb-3">
